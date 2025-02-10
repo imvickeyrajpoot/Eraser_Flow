@@ -1,0 +1,21 @@
+entity-relationship-diagram
+
+Course [icon: azure-website-staging, color: blue] {
+  FirstName String
+  LastName String
+  email String
+  DateRegistered DateTime
+}
+Student [icon: users, color: red] {
+  Title String
+  Price Float
+  Instructor String
+  Tags String
+}
+Enrollments [icon: azure-device-enrollment, color: green] {
+  DateTime DateTime
+  Price Float
+}
+Course.DateRegistered < Enrollments.DateTime
+Student.Price < Enrollments.Price
+

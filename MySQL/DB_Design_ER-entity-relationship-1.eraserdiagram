@@ -1,0 +1,14 @@
+entity-relationship-diagram
+
+Course [icon: azure-website-staging, color: blue] {
+  FirstName
+  LastName
+  email
+  DateRegistered
+}
+Student [icon: users, color: red] {
+  Title
+  price
+  Instructor
+  Tags
+}
