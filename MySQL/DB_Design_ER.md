@@ -109,6 +109,63 @@ Example: We have already discussed this, if you look at the diagram the Enrollme
 
 
 ## 3 NF
+-- In simple words "**a column in a table should not be derived from other columns**"
+
+-- 3NF takes it further by **removing transitive dependencies, a situation where non-key attributes depend indirectly on the primary key**. 
+
+By focusing on this, 3NF ensures that each non-key column in a table is directly tied to the primary key and nothing else.
+
+**Example 1**: You can see that we can get the balance details by subtracting the invoice total and payment total, but the balance amount will remain same if we change invoice total or payments total in future, so we have to remove balance column from here and put this in different table.
+
+
+
+**Example 2**: We can see that we have first, last and full name column name in a table, which is violating the 3NF because we can always get full name by combining first and last name. 
+
+
+
+
+
+
+
+## Forward Engineering a Model
+-- So far, we have just created ER model or Physical model, to move forward with the database will create the actual database by clicking on database menu from the top and then click on forward engineer to database.
+
+
+
+
+
+## Synchronizing a Model with a Database
+-- Now we have problem when we later update the ER model, and we want to make sure the changes took place overall place and network so we will do synchronizing option once making the changes. We added coupon column in our table enrollment, and we will do sync to database option.
+
+
+
+
+
+## Reverse Engineering a Model
+-- Suppose if you don't have database model for particular database then we can create using reverse engineering and make the changes required.
+
+![image.png](/.eraser/AK1I4YQwEpQmVPGHNHQS___7JEavVdR9CMTh9Mw4v2EFMgjxqo1___4chMZtprrM0GVbUnMBCnA.png "image.png")
+
+
+
+
+
+
+
+## Create Model on Flight Booking System
+![Screenshot 2025-02-12 at 06.07.22.png](/.eraser/AK1I4YQwEpQmVPGHNHQS___7JEavVdR9CMTh9Mw4v2EFMgjxqo1___hnrhLMXi9IvT7rT7CQhzn.png "Screenshot 2025-02-12 at 06.07.22.png")
+
+
+
+
+
+
+
+
+
+## Project - Video Rental Application
+![Screenshot 2025-02-12 at 06.09.15.png](/.eraser/AK1I4YQwEpQmVPGHNHQS___7JEavVdR9CMTh9Mw4v2EFMgjxqo1___s38PNopCOf6JJYlgjgVpt.png "Screenshot 2025-02-12 at 06.09.15.png")
+
 
 
 
